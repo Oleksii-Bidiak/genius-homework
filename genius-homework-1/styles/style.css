@@ -1,0 +1,96 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Roboto';
+	font-weight: 400;
+	src: url('../fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Play';
+	font-weight: 700;
+	src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+address {
+	font-style: normal;
+}
+
+:root {
+	--primaty-bg: #fff;
+	--secondary-bg: #011c44;
+	--text-color: #011c44;
+	--text-color-inverted: #fff;
+	--text-accent: #2b7fff;
+	--font-family-main: Roboto, sans-serif;
+	--font-family-second: Play, sans-serif;
+	--font-size: 18px;
+}
+
+body {
+	background-color: var(--primaty-bg);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size);
+	color: var(--text-color);
+}
+
+.header {
+	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.link {
+	color: inherit;
+}
+
+.link:hover {
+	color: var(--text-accent);
+}
+
+.main-title,
+.text-accent {
+	color: var(--text-accent);
+}
+
+.text-logo {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.title {
+	font-family: var(--font-family-second);
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.button {
+	background-color: var(--secondary-bg);
+	color: var(--text-color-inverted);
+}
+
+.footer {
+	background-color: var(--secondary-bg);
+	color: var(--text-color-inverted);
+}
